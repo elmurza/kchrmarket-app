@@ -113,7 +113,7 @@ const Catalogue = ({}) => {
       style={{ flex: 1, backgroundColor: "#fff", }}
       removeClippedSubviews={true}
       sections={catalogue.data?.allSubCategories}
-      onViewableItemsChanged={onViewableItemsChanged}
+      onViRewableItemsChanged={onViewableItemsChanged}
       renderSectionHeader={renderSectionHeader}
       renderItem={renderItem}
       getItemLayout={getItemLayout}

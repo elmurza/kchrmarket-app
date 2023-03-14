@@ -80,7 +80,7 @@ const UserModal = () => {
       const result = await Share.share({
         title: 'Поделитесь вашим промокодом',
         message:
-          `Привет, вот ${codeValue} бонусных рублей на доставку продуктов от сервиса https://seasonmarket.ru. Воспользуйся промокодом «${code}» и передай другому!`,
+          `Привет, вот ${codeValue} бонусных рублей на доставку продуктов от сервиса https://kchrmarket.ru. Воспользуйся промокодом «${code}» и передай другому!`,
       });
       if (result.action === Share.sharedAction) {
         if (result.activityType) {
@@ -194,7 +194,7 @@ const UserModal = () => {
             <TouchableWithoutFeedback onPress={async () => {
               const token = await AsyncStorage.getItem('token')
               goBack();
-              navigate("WebView", { title: "Анкета", url: "https://seasonmarket.ru/closer?standalone=true&apikey="+token });
+              navigate("WebView", { title: "Анкета", url: "https://kchrmarket.ru/closer?standalone=true&apikey="+token });
             }}>
               <SText fontWeight={500} fontSize={14}
                      style={{ marginTop: 6, textDecorationLine: "underline" }}>
