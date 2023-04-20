@@ -22,7 +22,7 @@ const Search = ({}) => {
             id: category.id,
             firstSubCat: category.firstSubCat,
             name: category.name,
-            image: category.image_mob
+            image: category.image_pc
         }))
     }, [catalogue.data?.categories])
 
@@ -45,7 +45,7 @@ const Search = ({}) => {
                           style={{marginTop: 16, flex: 1}}
                           renderItem={({item}) => <TouchableOpacity style={styles.item}
                                                                     onPress={() => goBackAndScroll(item.firstSubCat, item.id)}>
-                              <Icon iconSrc={{ uri: DOMAIN_URL + item.image }} size={48} style={{marginRight: 8, marginVertical: -10, marginHorizontal: -10}}/>
+                              <Icon iconSrc={{ uri: DOMAIN_URL + item.image }} size={340} style={{marginRight: 8, borderRadius: 15, marginVertical: -80, marginHorizontal: -10}}/>
                               <SText fontSize={18} fontWeight={900}>
                                   {item?.name?.toUpperCase() || ''}
                               </SText>
@@ -92,9 +92,9 @@ export default Search
 
 const styles = StyleSheet.create({
     item: {
-        flexDirection: 'row',
-        paddingVertical: 12,
-        alignItems: 'center'
+        // flexDirection: 'row',
+        paddingVertical: 2,
+        alignItems: 'center',
     },
     autocompleteItem: {
         borderBottomWidth: 1,

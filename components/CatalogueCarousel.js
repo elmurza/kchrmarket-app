@@ -74,7 +74,7 @@ const CatalogueCarousel = ({onSelect=()=>{}, selected, categories}) => {
               keyExtractor={((item, index) => item.id)}
               renderItem={({ item, index }) => (
                 <CatalogueItem key={item?.id}
-                               icon={item.image_mob}
+                               icon={item.image_pc}
                                id={item?.id}
                                iconActive={item.image_mob_active}
                                name={item.name}
