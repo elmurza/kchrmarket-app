@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import React, { useEffect, useState } from "react";
 import { SafeAreaView } from "react-native";
 import { NavigationContainer } from "@react-navigation/native";
 import MainRouter from "./routers/MainRouter";
@@ -14,13 +13,13 @@ import { SearchContext, useContextSearch } from "./data/SearchContext";
 import PreloaderAuth from "./components/PreloaderAuth";
 import AppMetrica from "react-native-appmetrica";
 import { APPMETRICA_APIKEY } from "./config";
-import {
-  createBackgroundListener,
-  createForegroundListener,
-  initFCM,
-  registerAppWithFCM,
-  requestUserPermission,
-} from "./utils/Firebase";
+// import {
+//   createBackgroundListener,
+//   createForegroundListener,
+//   initFCM,
+//   registerAppWithFCM,
+//   requestUserPermission,
+// } from "./utils/Firebase";
 import { firebase } from "@react-native-firebase/messaging";
 
 moment.locale('ru')
@@ -78,11 +77,11 @@ const AppWrapper = () => {
   }, [])
 
   useEffect(()=>{
-    return createForegroundListener()
+    //return createForegroundListener()
   },[])
 
   useEffect(()=>{
-    return createBackgroundListener()
+    //return createBackgroundListener()
   },[])
 
 

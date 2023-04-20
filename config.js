@@ -1,7 +1,7 @@
 import { Dimensions } from "react-native";
 
-export const BASE_URL = 'https://api.seasonmarket.ru/api/'
-export const DOMAIN_URL = 'https://api.seasonmarket.ru/'
+export const BASE_URL = 'https://api.kchrmarket.ru/api/'
+export const DOMAIN_URL = 'https://api.kchrmarket.ru/'
 
 export const MapKitKeys = [
   '95f79f13-83ec-42b6-890b-db1b8b823e92',

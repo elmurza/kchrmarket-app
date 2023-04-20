@@ -519,14 +519,14 @@ export function mapCatsV2 (response) { //todo map for app
 
 
   const categories = response.data.categories
-    .filter(category=>category?.active === '1')
+    .filter(category=>category?.active == '1')
     .map(category=>({
       ...category,
       firstSubCategoryId: category.subCategories?.[0]?.category_id || null, // todo
       firstSubCategoryUrl: category.subCategories?.[0]?.url || null, // todo
-      subCategories: (category.subCategories.filter(subCategory=>subCategory?.active === '1').length && !IS_WEB ?
+      subCategories: (category.subCategories.filter(subCategory=>subCategory?.active == '1').length && !IS_WEB ?
         category.subCategories
-          .filter(subCategory=>subCategory?.active === '1').map(subCategory=>({
+          .filter(subCategory=>subCategory?.active == '1').map(subCategory=>({
           ...subCategory,
           parentId: category.id,
           data: products.filter(product=>product?.slave_category?.includes(Number(subCategory.id))),

@@ -68,7 +68,7 @@ const OrderDetails = () => {
     if (params.askToRate) {
       const options = {
         AppleAppID:"1592363671",
-        GooglePackageName:"com.kchr_market",
+        GooglePackageName:"com.season_market",
         preferredAndroidMarket: AndroidMarket.Google,
         preferInApp: true,
         openAppStoreIfInAppFails: false,
