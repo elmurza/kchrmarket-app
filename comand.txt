@@ -1,0 +1,3 @@
+./gradlew bundleRelease - билд
+ ./gradlew assembleDebug - дебаг
+yarn android  - запуск

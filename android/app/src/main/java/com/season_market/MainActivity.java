@@ -1,4 +1,4 @@
-package com.season_market;
+package com.kchr_market;
 
 import android.os.Bundle;
 import com.facebook.react.ReactActivity;
